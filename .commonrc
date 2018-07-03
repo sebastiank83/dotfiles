@@ -1,0 +1,5 @@
+# Load settings
+for f in "$HOME"/.shell/*; do source $f; done
+
+# Include local bin into PATH
+[[ -d "$HOME/bin" ]] && export PATH=$HOME/bin:$PATH

@@ -1,0 +1,1 @@
+../../1.0/plugins/sbt-prompt.sbt

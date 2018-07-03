@@ -1,0 +1,7 @@
+if [[ -f "$HOME/.proxy_enabled" ]]; then
+  export http_proxy="http://localhost:3128"
+  export https_proxy=${http_proxy}
+
+  alias pxon="export http_proxy=${http_proxy};export https_proxy=${https_proxy};"
+  alias pxoff="unset http_proxy; unset https_proxy"
+fi

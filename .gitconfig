@@ -1,0 +1,22 @@
+[user]
+  name = Sebastian Kichtan
+  email = sebastian@kichtan.de
+[github]
+  user = sebastiank83
+[credential]
+  helper = osxkeychain
+[core]
+  excludesfile = ~/.gitignore_global
+[alias]
+  prune = fetch --prune
+  undo = reset --soft HEAD^
+  stash-all = stash save --include-untracked
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[merge]
+  ff = only
+[push]
+  default = simple
+[url "https://"]
+  insteadOf = git://
+[url "https://github.com"]
+  insteadOf = ssh://git@github.com
