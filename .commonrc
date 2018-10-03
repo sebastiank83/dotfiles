@@ -1,5 +1,15 @@
 # Load settings
 for f in "$HOME"/.shell/*; do source $f; done
 
-# Include local bin into PATH
 [[ -d "$HOME/bin" ]] && export PATH=$HOME/bin:$PATH
+[[ -d "/usr/local/bin" ]] && export PATH=/usr/local/bin:$PATH
+
+# UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+VISUAL="emacs"
+
+if [ -z "$TMUX" ]; then
+  tmux attach || tmux new
+fi
