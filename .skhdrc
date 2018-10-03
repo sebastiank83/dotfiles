@@ -1,0 +1,33 @@
+#
+# Amethyst inspired bindings
+#
+
+shift + alt - space : chunkc tiling::desktop --layout monocle
+ctrl  + shift + alt - space : chunkc tiling::desktop --layout bsp
+
+# toggle window fullscreen
+shift + alt - f : chunkc tiling::window --toggle fullscreen
+
+# toggle window native fullscreen
+ctrl + shift + alt - f : chunkc tiling::window --toggle native-fullscreen
+
+# focus window
+shift + alt - j : chunkc tiling::window --focus prev
+shift + alt - k : chunkc tiling::window --focus next
+
+# focus monitor
+shift + alt - w  : chunkc tiling::monitor -f 1
+shift + alt - e  : chunkc tiling::monitor -f 2
+#shift + ctrl + alt - 1  : chunkc tiling::monitor -f 1
+#shift + ctrl + alt - 2  : chunkc tiling::monitor -f 2
+#shift + ctrl + alt - 3  : chunkc tiling::monitor -f 3
+
+## send window to monitor and follow focus
+shift + ctrl + alt - w  : chunkc tiling::window --send-to-monitor 1; chukc tiling::monitor -f 1
+shift + ctrl + alt - e  : chunkc tiling::window --send-to-monitor 2; chukc tiling::monitor -f 2
+
+
+## send window to desktop
+shift + ctrl + alt - 1 : chunkc tiling::window --send-to-desktop 1; chunkc tiling::desktop --focus 1
+shift + ctrl + alt - 2 : chunkc tiling::window --send-to-desktop 2; chunkc tiling::desktop --focus 2
+shift + ctrl + alt - 3 : chunkc tiling::window --send-to-desktop 3; chunkc tiling::desktop --focus 3
