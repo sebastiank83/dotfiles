@@ -1,1 +1,2 @@
-#
+alias mcstop="sudo /usr/local/McAfee/AntiMalware/VSControl stopoas; sudo /usr/local/McAfee/AntiMalware/VSControl stop"
+alias mcstart="sudo /usr/local/McAfee/AntiMalware/VSControl startoas; sudo /usr/local/McAfee/AntiMalware/VSControl start"
