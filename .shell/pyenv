@@ -1,0 +1,6 @@
+if [ $(command -v pyenv) ]; then
+  eval "$(pyenv init -)"
+  if [ $(command -v pyenv-virtualenv-init) ]; then
+    eval "$(pyenv virtualenv-init -)"
+  fi
+fi
